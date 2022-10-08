@@ -1,6 +1,7 @@
 #!/bin/bash
 
-./login2.sh
+chmod +x ./login2.sh
+#./login2.sh
 clear
 inicio=1;
 quiensoy=$(whoami)
@@ -18,7 +19,8 @@ do
 		inicio=0; clear
 	elif [[ "$comando" == "reproductor" ]]
 	then
-		echo "prueba ian"
+		chmod +x ./reproductor.sh
+		./reproductor.sh
 	else
 		$comando #Para usar los comandos predeterminados de Linux
 	fi
