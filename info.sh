@@ -24,3 +24,4 @@ echo
 printf "> Version del sistema operativo:    " 
 cat /etc/issue.net
 echo
+echo
