@@ -112,7 +112,7 @@ then
         esac
 
     else
-        echo opcion no valida
+        echo opcion invalida / invalid option
     fi
 
 else
