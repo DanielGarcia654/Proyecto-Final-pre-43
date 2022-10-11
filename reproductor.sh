@@ -1,5 +1,5 @@
 #!/bin/bash
-
+trap ' ' 2 15 20
 r1=/usr/share/doc/mpg123
 r2=/lib/x86_64-linux-gnu/mpg123
 
