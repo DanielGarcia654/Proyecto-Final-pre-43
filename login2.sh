@@ -1,5 +1,5 @@
 #!/bin/bash
-
+trap ' ' 2 15 20
 #Con getent, encontramos si existe un usuario con las credenciales ingresadas y comparamos dependiendo del resultado
 clear
 echo "Ingresa tu usuario: "
