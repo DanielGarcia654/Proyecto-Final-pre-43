@@ -1,7 +1,7 @@
 #!/bin/bash
 
 trap ' ' 2 15 20
-
+echo
 echo "ingrese la palabra que se tiene que advinar"
 read palabra
 clear
