@@ -1,5 +1,7 @@
 #!/bin/bash
 
+trap ' ' 2 15 20
+
 ruta=$(pwd) #Para conservar la carpeta de origen
 echo "Ingresa la carpeta: "
 read carpeta
