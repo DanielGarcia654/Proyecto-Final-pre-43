@@ -21,8 +21,28 @@ do
 		inicio=0; clear
 	elif [[ "$comando" == "reproductor" ]]
 	then
-		chmod +x ./reproductor.sh
+		chmod +x reproductor.sh
 		./reproductor.sh
+	elif [[ "$comando" == "buscar" ]]
+	then
+		chmod +x buscar.sh
+		./buscar.sh
+	elif [[ "$comando" == "fecha" ]]
+	then
+		chmod +x fechaHora.sh
+		./fechaHora.sh
+	elif [[ "$comando" == "infosis" ]]
+	then
+		chmod +x info.sh
+		./info.sh
+	elif [[ "$comando" == "juego" ]]
+	then
+		chmod +x ahorcado.sh
+		./ahorcado.sh
+	elif [[ "$comando" == "creditos" ]]
+	then
+		chmod +x creditos.sh
+		./creditos.sh
 	elif [[ "$comando" == "ayuda" ]]
 	then
 		echo "Estos son los comandos disponibles: "
