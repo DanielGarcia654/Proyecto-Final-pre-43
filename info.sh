@@ -1,5 +1,5 @@
 #!/bin/bash
-
+trap ' ' 2 15 20
 echo
 printf "> RAM Total:                        "
 cat /proc/meminfo | grep "MemTotal" | cut --complement -c -17
