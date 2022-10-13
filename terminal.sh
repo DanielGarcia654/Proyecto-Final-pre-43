@@ -5,7 +5,7 @@ clear
 inicio=1
 quiensoy=$(whoami)
 dir=$(pwd)
-
+dir2=$(pwd)
 #./login2.sh Para llamar otros scripts
 
 carpeta=${dir##*/} #Para imprimir unicamente la carpeta (##*/ para limitar todo lo que esta antes de la barra -/-, como si se imprimiera unicamente el nombre de un archivo)
@@ -21,28 +21,40 @@ do
 		inicio=0; clear
 	elif [[ "$comando" == "reproductor" ]]
 	then
+		cd "$dir2" #Es para acceder a la ubicacion donde se encuentra el proyecto y ejecutar los scripts
 		chmod +x reproductor.sh
 		./reproductor.sh
+		cd "$dir" #regresamos a la ubicacion donde se encontraba el usuario
 	elif [[ "$comando" == "buscar" ]]
 	then
+		cd "$dir2"
 		chmod +x buscar.sh
 		./buscar.sh
+		cd "$dir"
 	elif [[ "$comando" == "fecha" ]]
 	then
+		cd "$dir2"
 		chmod +x fechaHora.sh
 		./fechaHora.sh
+		cd "$dir"
 	elif [[ "$comando" == "infosis" ]]
 	then
+		cd "$dir2"
 		chmod +x info.sh
 		./info.sh
+		cd "$dir"
 	elif [[ "$comando" == "juego" ]]
 	then
+		cd "$dir2"
 		chmod +x ahorcado.sh
 		./ahorcado.sh
+		cd "$dir"
 	elif [[ "$comando" == "creditos" ]]
 	then
+		cd "$dir2"
 		chmod +x creditos.sh
 		./creditos.sh
+		cd "$dir"
 	elif [[ "$comando" == "ayuda" ]]
 	then
 		echo "Estos son los comandos disponibles: "
